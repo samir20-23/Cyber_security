@@ -1,7 +1,7 @@
-Sure! Here's how you can structure a **README.md** file to explain all the steps with gifs and animations. You can also embed gifs or images at the top of the README to make it more engaging.
-
----
-
+ <div id="header" align="center">
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXBzaXdoa284M3IxMm1naG5vN3Exbmt2aWVsNzU0YTFmOGdsZDFiZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4jEmDP26dZXuyytRAk/giphy.gif" width="400"/>
+       </a>
+</div>
 ## **README: How to Run `.bat` Files Without Warnings (Windows)**
 
 ### **Introduction**
@@ -67,30 +67,14 @@ If you'd like to run a `.bat` file as an administrator (with higher privileges),
 ---
 
 ### **Conclusion**
-Following the steps above, you should be able to run your `.bat` files without receiving the SmartScreen warning. Be sure to always verify the source of your files and exercise caution when running scripts.
+Following the steps above, you should be able to run your `.bat` files without receiving the Sma 
 
-If you have any questions or need assistance, feel free to reach out!
+<div id="header" align="center">
+  <img src="https://media1.giphy.com/media/8dPbkqUb2p5XTvIXLx/giphy.webp?cid=ecf05e47mbn3dd55rnvco4s4shss53vauqpq0nvvo5wb1mmx&ep=v1_gifs_related&rid=giphy.webp&ct=g" width="400"/>
+       </a>
+</div>
 
----
-
-**How to add gifs or animations:**
-
-To add gifs or animations in your README.md file, you can use this syntax to embed images or gifs hosted on the web:
-
-```markdown
-![SmartScreen Settings](https://path/to/your/screenshot_or_gif.gif)
-```
-
-- Upload the gif to a hosting platform (like **Giphy**, **Imgur**, or your GitHub repository) and use the URL in the markdown to display it.
-- You can also host the gifs directly in your repository under a `/assets` folder and link to them like this:
-
-```markdown
-![SmartScreen Settings](./assets/smartscreen-settings.gif)
-```
-
----
-
-With this structure, you can easily explain how to bypass or disable SmartScreen while adding helpful gifs for clarity.
+## ________________________________________________
  
 ## General Information
 
