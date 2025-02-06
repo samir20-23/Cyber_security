@@ -1,5 +1,5 @@
  <div id="header" align="center">
-  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXBzaXdoa284M3IxMm1naG5vN3Exbmt2aWVsNzU0YTFmOGdsZDFiZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/4jEmDP26dZXuyytRAk/giphy.gif" width="400"/>
+  <img src="https://media1.giphy.com/media/V4NSR1NG2p0KeJJyr5/200.webp?cid=790b76110mnwtaylv0kirmi25dgtludgi85aewtwwte5zhh9&ep=v1_gifs_search&rid=200.webp&ct=g" width="400"/>
        </a>
 </div>
 ## **README: How to Run `.bat` Files Without Warnings (Windows)**
@@ -70,7 +70,7 @@ If you'd like to run a `.bat` file as an administrator (with higher privileges),
 Following the steps above, you should be able to run your `.bat` files without receiving the Sma 
 
 <div id="header" align="center">
-  <img src="https://media1.giphy.com/media/8dPbkqUb2p5XTvIXLx/giphy.webp?cid=ecf05e47mbn3dd55rnvco4s4shss53vauqpq0nvvo5wb1mmx&ep=v1_gifs_related&rid=giphy.webp&ct=g" width="400"/>
+  <img src="https://media3.giphy.com/media/yAGIvCiwPJn5C/200.webp?cid=790b76110mnwtaylv0kirmi25dgtludgi85aewtwwte5zhh9&ep=v1_gifs_search&rid=200.webp&ct=g" width="400"/>
        </a>
 </div>
 
