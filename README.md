@@ -91,3 +91,124 @@ To add gifs or animations in your README.md file, you can use this syntax to emb
 ---
 
 With this structure, you can easily explain how to bypass or disable SmartScreen while adding helpful gifs for clarity.
+ 
+## General Information
+
+Wireshark is a network traffic analyzer, or "sniffer," for Windows, Linux, macOS, *BSD, and other Unix-like operating systems. It uses Qt, a graphical user interface library, and libpcap and npcap as packet capture and filtering libraries.
+
+The Wireshark distribution also comes with TShark, a line-oriented sniffer (similar to Sun's snoop or tcpdump) that uses the same dissection, capture-file reading and writing, and packet filtering code as Wireshark. Additionally, it includes **editcap**, which is a program to read capture files and write the packets from that capture file, possibly in a different capture file format, and with some packets possibly removed from the capture.
+
+The official home of Wireshark is [Wireshark Official Website](https://www.wireshark.org).
+
+The latest distribution can be found at [Wireshark Downloads](https://www.wireshark.org/download).
+
+---
+
+## Installation
+
+Wireshark is regularly built and tested on the following platforms:
+
+  - **Microsoft Windows**
+  - **Linux (Ubuntu)**
+  - **macOS / OS X**
+
+Official installation packages are available for **Windows** and **macOS**.
+
+It is available as either a standard or add-on package for many popular Linux distributions, including Debian, Ubuntu, Fedora, CentOS, RHEL, Arch, Gentoo, openSUSE, FreeBSD, DragonFly BSD, NetBSD, and OpenBSD.
+
+Additionally, it is available through many third-party packaging systems such as **Homebrew** for macOS and **pkgsrc** for BSD-based systems.
+
+To install Wireshark on **Windows**, follow the instructions below:
+
+1. Download the **Wireshark Installer** for Windows from the official website.
+2. Run the installer and follow the on-screen instructions.
+3. During installation, you may need to choose to install **Npcap** (used for packet capture) if it is not already installed on your system.
+
+### Dependencies for Building Wireshark on Windows
+
+- **Python 3**: Required for building Wireshark.
+- **AsciiDoctor**: Needed for building the documentation, including the man pages.
+- **Perl and flex**: Required for generating some of the source code.
+
+Make sure these dependencies are installed before starting the build process. 
+
+For full installation instructions, check the **INSTALL** file and the **Developer's Guide** at [Wireshark Developer's Guide](https://www.wireshark.org/docs/wsdg_html_chunked/).
+
+---
+
+## Usage
+
+To capture packets from the network on Windows, you need to ensure the following:
+
+- **Wireshark** and **TShark** should be run with administrator privileges for capturing live network data.
+- For packet capture, you need to make sure **Npcap** is correctly installed and functioning.
+
+To run Wireshark or TShark:
+
+1. Open **Wireshark** from the Start Menu (or launch **TShark** from the Command Prompt).
+2. Select the network interface from which to capture packets.
+3. Begin packet capture to analyze network traffic.
+
+You can also use **dumpcap**, a simplified capture tool for use with specific user permissions.
+
+---
+
+## Multiple File Types
+
+Wireshark can read packets from a variety of different file types, and it can transparently read compressed versions of those files. Currently supported compression formats are:
+
+- **GZIP**
+- **LZ4**
+- **ZSTD**
+
+Wireshark can read compressed files with no additional setup if the required compression libraries were available when Wireshark was compiled.
+
+If you want to turn off support for specific formats, you can disable them at compile time by passing the appropriate options to the CMake build.
+
+---
+
+## SNMP
+
+Wireshark can perform basic decoding of SNMP packets. You can also use the **libsmi** library for more sophisticated SNMP packet decoding, reading MIB files to display OIDs and variable binding values.
+
+---
+
+## How to Report a Bug
+
+If you encounter a bug, please report it on the [Wireshark GitLab Issues Page](https://gitlab.com/wireshark/wireshark/-/issues).
+
+When reporting a bug:
+
+1. Provide the full build information from the "About Wireshark" section or the output of `wireshark -v` for Wireshark bugs.
+2. Include the command used to invoke Wireshark or TShark.
+3. If the bug is related to a specific trace file, attach the file (ensuring it does not contain sensitive data).
+
+If Wireshark crashes with errors like "segmentation violation" or "bus error," you can help developers by providing a **stack trace** using a debugger like **gdb**.
+
+---
+
+## License
+
+Wireshark is distributed under the **GNU GPLv2** license. Please refer to the `COPYING` file for the full text of the license.
+
+Wireshark allows users to modify and distribute the source code, but redistribution must comply with the terms of the GPLv2.
+
+Certain utilities distributed with the Wireshark source code are licensed under different licenses compatible with GPLv2. For example, the **pidl utility** (tools/pidl) is licensed under **GPLv3+**.
+
+---
+
+## Disclaimer
+
+There is no warranty, expressed or implied, associated with this product. Use at your own risk.
+
+For further details, please consult the **README** and the Wireshark Documentation available at [Wireshark Documentation](https://www.wireshark.org/docs/).
+
+---
+
+If you need additional assistance or have specific issues, please reach out to the Wireshark team at:
+
+- **Gerald Combs** <gerald@wireshark.org>
+- **Gilbert Ramirez** <gram@alumni.rice.edu>
+- **Guy Harris** <gharris@sonic.net> 
+
+---  
