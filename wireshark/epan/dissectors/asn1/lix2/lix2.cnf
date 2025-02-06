@@ -1,0 +1,32 @@
+# lix2.cnf
+# lix2 conformation file
+
+# $Id$
+
+#.MODULE_IMPORT
+
+#.OMIT_ASSIGNMENT
+HeaderOnlyIndication
+KAFParams
+AreaScopeOfMDT
+MDTActivation
+MDTConfigurationEUTRA
+MDTConfigurationNR
+MDTMode
+RCSServerURI
+
+#.EXPORTS
+
+#.PDU
+XIRIPayload
+
+#.NO_EMIT
+
+#.TYPE_RENAME
+
+#.TYPE_ATTR
+Timestamp  TYPE = FT_ABSOLUTE_TIME  DISPLAY = ABSOLUTE_TIME_UTC
+
+#.FIELD_RENAME
+
+#.END
