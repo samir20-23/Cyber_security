@@ -1,0 +1,316 @@
+include::attributes.adoc[]
+:stylesheet: ws.css
+:linkcss:
+:copycss: {css_dir}/{stylesheet}
+
+= Wireshark {wireshark-version} Release Notes
+// Asciidoctor Syntax Quick Reference:
+// https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
+
+== What is Wireshark?
+
+Wireshark is the world’s most popular network protocol analyzer.
+It is used for troubleshooting, analysis, development and education.
+
+Wireshark is hosted by the Wireshark Foundation, a nonprofit which promotes protocol analysis education.
+Wireshark and the foundation depend on your contributions in order to do their work.
+If you or your organization would like to contribute or become a sponsor, please visit https://wiresharkfoundation.org[wiresharkfoundation.org].
+
+== What’s New
+
+=== Bug Fixes
+
+// The following vulnerabilities have been fixed:
+
+// * wssalink:2024-16[]
+// Foo dissector {crash,infinite loop,memory leak}.
+// wsbuglink:xxx[].
+// cveidlink:2024-xxx[].
+// Fixed in master: xxx
+// Fixed in release-4.4: xxx
+// Fixed in release-4.2: xxx
+// CVSS AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
+// CWE-824
+
+The following bugs have been fixed:
+
+//The following bugs have been fixed:
+//* wsbuglink:5000[]
+//* wsbuglink:6000[Wireshark bug]
+//* cveidlink:2014-2486[]
+//* Wireshark took a bite out of each of your freshly baked muffins until it found the perfect one.
+
+* Potential mis-match in GSM MAP dissector for uncertainty radius and its filter key. wsbuglink:20247[].
+* Macro eNodeB ID and Extended Macro eNodeB ID not decoded by User Location Information. wsbuglink:20276[].
+* The NFSv2 Dissector appears to be swapping Character Special File and Directory in mode decoding. wsbuglink:20290[].
+* CMake discovers Strawberry Perl's zlib DLL when it shouldn't. wsbuglink:20304[].
+* VOIP Calls call flow displaying hours. wsbuglink:20311[].
+* Fuzz job issue: fuzz-2024-12-26-7898.pcap. wsbuglink:20313[].
+* sFlow: Incorrect length passed to header sample dissector. wsbuglink:20320[].
+* wsutil: Should link against -lm due to missing fabs() when built with -fno-builtin. wsbuglink:20326[].
+
+// == Known Bugs
+
+=== New and Updated Features
+
+// === Removed Features and Support
+
+// === Removed Dissectors
+
+=== New Protocol Support
+
+There are no new protocols in this release.
+
+=== Updated Protocol Support
+
+// Add one protocol per line between the -- delimiters.
+// ag -A1 '(define PSNAME|proto_register_protocol[^_])' $(git diff --name-only v4.4.3.. | ag packet- | sort -u)
+[commaize]
+--
+ASN.1 PER
+ARTNET
+BACapp
+BBLog
+BT BR/EDR RF
+CQL
+Diameter
+DOF
+ECMP
+FiveCo RAP
+FTDI FT
+GSM COMMON
+GTPv2
+HCI_MON
+HSRP
+HTTP2
+ICMPv6
+IEEE 802.11
+Kafka
+LTE RRC
+MBIM
+MMS
+Modbus/TCP
+MPEG PES
+NAS-EPS
+NFS
+NGAP
+NR RRC
+PLDM
+POP
+ProtoBuf
+PN-DCP
+PTP
+RPC
+RTCP
+sFlow
+SIP
+SRT
+TCP
+UCP
+RLC
+USBCCID
+Wi-SUN
+ZigBee ZCL
+--
+
+=== New and Updated Capture File Support
+
+// There is no new or updated capture file support in this release.
+// Add one file type per line between the -- delimiters.
+// [commaize]
+--
+CLLog
+EMS
+ERF
+--
+
+=== Updated File Format Decoding Support
+
+There is no updated file format support in this release.
+// Add one file type per line between the -- delimiters.
+// [commaize]
+// --
+// --
+
+// === New and Updated Capture Interfaces support
+
+// === New and Updated Codec support
+
+// === Major API Changes
+
+== Prior Versions
+
+Wireshark 4.4.2 included the following changes.
+See the
+https://www.wireshark.org/docs/relnotes/wireshark-4.4.2.html[release notes]
+for details:
+
+* wssalink:2024-14[]
+FiveCo RAP dissector infinite loop.
+wsbuglink:20176[].
+
+* wssalink:2024-15[]
+ECMP dissector crash.
+wsbuglink:20214[].
+
+* CIP I/O is not detected by "enip" filter anymore. wsbuglink:19517[].
+* Fuzz job issue: fuzz-2024-09-03-7550.pcap. wsbuglink:20041[].
+* OSS-Fuzz 71476: wireshark:fuzzshark_ip_proto-udp: Index-out-of-bounds in DOFObjectID_Create_Unmarshal. wsbuglink:20065[].
+* JA4_c hashes an empty field to e3b0c44298fc when it should be 000000000000. wsbuglink:20066[].
+* Opening Wireshark 4.4.0 on macOS 15.0 disconnects iPhone Mirroring. wsbuglink:20082[].
+* PTP analysis loses track of message associations in case of sequence number resets. wsbuglink:20099[].
+* USB CCID: response packet in case SetParameters command is unsupported is flagged as malformed. wsbuglink:20107[].
+* dumpcap crashes when run from TShark with a capture filter. wsbuglink:20108[].
+* SRT dissector: The StreamID (SID) in the handshake extension is displayed without regarding the control characters and with NUL as terminating. wsbuglink:20113[].
+* Ghost error message on POP3 packets. wsbuglink:20124[].
+* Building against c-ares 1.34 fails. wsbuglink:20125[].
+* D-Bus is not optional anymore. wsbuglink:20126[].
+* macOS Intel DMGs aren't fully notarized. wsbuglink:20129[].
+* Incorrect name for MLD Capabilities and Operations Present flag in dissection of MLD Capabilities for MLO wifi-7 capture. wsbuglink:20134[].
+* CQL Malformed Packet v4 S -> C Type RESULT: Prepared[Malformed Packet] wsbuglink:20142[].
+* Wi-Fi: 256 Block Ack (BA) is not parsed properly. wsbuglink:20156[].
+* BACnet ReadPropertyMultiple request Maximum allowed recursion depth reached. wsbuglink:20159[].
+* Statistics->I/O Graph crashes when using simple moving average. wsbuglink:20163[].
+* HTTP2 body decompression fails on DATA with a single padded frame. wsbuglink:20167[].
+* Compiler warning for ui/tap-rtp-common.c (ignoring return value) wsbuglink:20169[].
+* SIP dissector bug due to "be-route" param in VIA header. wsbuglink:20173[].
+* Coredump after trying to open 'Follow TCP stream' wsbuglink:20174[].
+* Protobuf JSON mapping error. wsbuglink:20182[].
+* Display filter "!stp.pvst.origvlan in { vlan.id }" causes a crash (Version 4.4.1) wsbuglink:20183[].
+* Extcap plugins shipped with Wireshark Portable are not found in version 4.4.1. wsbuglink:20184[].
+* IEEE 802.11be: Wrong regulatory info in HE Operation IE in Beacon frame. wsbuglink:20187[].
+* Wireshark 4.4.1 does not decode RTCP packets. wsbuglink:20188[].
+* Qt: Display filter sub-menu can only be opened on the triangle, not the full name. wsbuglink:20190[].
+* Qt: Changing the display filter does not update the Conversations or Endpoints dialogs. wsbuglink:20191[].
+* MODBUS Dissector bug. wsbuglink:20192[].
+* Modbus dissector bug - Field Occurence and Layer Operator modbus.bitval field. wsbuglink:20193[].
+* Wireshark crashes when a field is dragged  from packet details towards the find input. wsbuglink:20204[].
+* Lua DissectorTable("") : set ("10,11") unexpected behavior in locales with comma as decimal separator. wsbuglink:20216[].
+
+The TCP dissector no longer falls back to using the client port as a criterion for selecting a payload dissector when the server port does not select a payload dissector (except for port 20, active FTP).
+This behavior can be changed using the "Client port dissectors" preference.
+
+Display filters now correctly handle floating point conversion errors.
+
+The Lua API now has better support for comma-separated ranges in different locales.
+
+
+Wireshark 4.4.1 included the following changes.
+See the
+https://www.wireshark.org/docs/relnotes/wireshark-4.4.1.html[release notes]
+for details:
+
+* wssalink:2024-12[]
+ITS dissector crash.
+wsbuglink:20026[].
+
+* wssalink:2024-13[]
+AppleTalk and RELOAD Framing dissector crashes.
+wsbuglink:20114[].
+
+* Refresh interface during live-capture leads to corrupt interface handling. wsbuglink:11176[].
+* Media type "application/octet-stream" registered for both Thread and UASIP. wsbuglink:14729[].
+* Extcap toolbar stops working when new interface is added. wsbuglink:19854[].
+* Decoding error ITS CPM version 2.1.1. wsbuglink:19886[].
+* Build error in 4.3.0: sync_pipe_run_command_actual error: argument 2 is null but the corresponding size argument 3 value is 512004 [-Werror=nonnull] wsbuglink:19930[].
+* html2text.py doesn't handle the `<sup>` tag. wsbuglink:20020[].
+* Incorrect NetFlow v8 TOS AS aggregation dissection. wsbuglink:20021[].
+* The Windows packages don't ship with the IP address plugin. wsbuglink:20030[].
+* O_PATH is Linux-and-FreeBSD-specific. wsbuglink:20031[].
+* Wireshark 4.4.0 doesn't install USBcap USBcapCMD.exe in the correct directory. wsbuglink:20040[].
+* OER dissector is not considering the preamble if ASN.1 SEQUENCE definition includes extension marker but no OPTIONAL items. wsbuglink:20044[].
+* Bluetooth classic L2CAP incorrect dissection with connectionless reception channel. wsbuglink:20047[].
+* Profile auto switch filters : Grayed Display Filter Expression dialog box when opened from Configuration Profiles dialog box. wsbuglink:20049[].
+* Wireshark 4.4.0 / macOS 14.6.1 wifi if monitor mode. wsbuglink:20051[].
+* TECMP Data Type passes too much data to sub dissectors. wsbuglink:20052[].
+* Wireshark and tshark 4.4.0 ignore extcap options specified on the command line. wsbuglink:20054[].
+* Cannot open release notes due to incorrect path with duplicated directory components. wsbuglink:20055[].
+* Unable to open "Release Notes" from the "Help" menu. wsbuglink:20056[].
+* No capture interfaces if Wireshark is started from command line with certain paths. wsbuglink:20057[].
+* Wireshark 4.4.0 extcap path change breaks third party extcap installers. wsbuglink:20069[].
+* Fuzz job UTF-8 encoding issue: fuzz-2024-09-10-7618.pcap. wsbuglink:20071[].
+* Unable to create larger files than 99 size units. wsbuglink:20079[].
+* Opening Wireshark 4.4.0 on macOS 15.0 disconnects iPhone Mirroring. wsbuglink:20082[].
+* PRP trailer not shown for L2 IEC 61850 GOOSE packets in 4.4.0 (was working in 4.2.7) wsbuglink:20088[].
+* GUI lags because NetworkManager keeps turning 802.11 monitor mode off. wsbuglink:20090[].
+* Error while getting Bluetooth application process id by <shell:ps -A | grep com.*android.bluetooth> wsbuglink:20100[].
+* Fuzz job assertion: randpkt-2024-10-05-7200.pcap. wsbuglink:20110[].
+
+Wireshark 4.4.0 included the following changes.
+See the
+https://www.wireshark.org/docs/relnotes/wireshark-4.4.0.html[release notes]
+for details:
+
+Many improvements and fixes to the graphing dialogs, including
+I/O Graphs, Flow Graph / VoIP Calls, and TCP Stream Graphs.
+
+Wireshark now supports automatic profile switching.
+You can associate a display filter with a configuration profile, and when you open a capture file that matches the filter, Wireshark will automatically switch to that profile.
+
+Support for Lua 5.3 and 5.4 has been added, and support for Lua 5.1 and 5.2 has been removed.
+The Windows and macOS installers now ship with Lua 5.4.6.
+
+Improved display filter support for value strings (optional string representations for numeric fields).
+
+Display filter functions can be implemented as plugins, similar to protocol dissectors and file parsers.
+
+Display filters can be translated to pcap filters using menu:Edit[Copy,Display filter as pcap filter] if each display filter field has a corresponding pcap filter equivalent.
+
+Custom columns can be defined using any valid field expression, such as
+display filter functions, packet slices, arithmetic calculations, logical tests,
+raw byte addressing, and protocol layer modifiers.
+
+Custom output fields for `tshark -e` can also be defined using any
+valid field expression.
+
+Wireshark can be built with the zlib-ng instead of zlib for compressed file support.
+Zlib-ng is substantially faster than zlib.
+The official Windows and macOS packages include this feature.
+
+== Getting Wireshark
+
+Wireshark source code and installation packages are available from
+https://www.wireshark.org/download.html.
+
+=== Vendor-supplied Packages
+
+Most Linux and Unix vendors supply their own Wireshark packages.
+You can usually install or upgrade Wireshark using the package management system specific to that platform.
+A list of third-party packages can be found on the
+https://www.wireshark.org/download.html[download page]
+on the Wireshark web site.
+
+== File Locations
+
+Wireshark and TShark look in several different locations for preference files, plugins, SNMP MIBS, and RADIUS dictionaries.
+These locations vary from platform to platform.
+You can use menu:Help[About Wireshark,Folders] or `tshark -G folders` to find the default locations on your system.
+
+== Getting Help
+
+The User’s Guide, manual pages and various other documentation can be found at
+https://www.wireshark.org/docs/
+
+Community support is available on
+https://ask.wireshark.org/[Wireshark’s Q&A site]
+and on the wireshark-users mailing list.
+Subscription information and archives for all of Wireshark’s mailing lists can be found on https://lists.wireshark.org/lists/[the mailing list site].
+
+Bugs and feature requests can be reported on
+https://gitlab.com/wireshark/wireshark/-/issues[the issue tracker].
+
+You can learn protocol analysis and meet Wireshark’s developers at
+https://sharkfest.wireshark.org[SharkFest].
+
+// Official Wireshark training and certification are available from
+// https://www.wiresharktraining.com/[Wireshark University].
+
+== How You Can Help
+
+The Wireshark Foundation helps as many people as possible understand their networks as much as possible.
+You can find out more and donate at https://wiresharkfoundation.org[wiresharkfoundation.org].
+
+== Frequently Asked Questions
+
+A complete FAQ is available on the
+https://www.wireshark.org/faq.html[Wireshark web site].

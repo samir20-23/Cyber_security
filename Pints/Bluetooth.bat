@@ -1,0 +1,3 @@
+@echo off
+echo Opening Bluetooth settings...
+start ms-settings:bluetooth
