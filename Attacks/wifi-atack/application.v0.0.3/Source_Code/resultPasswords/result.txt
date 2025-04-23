@@ -1,0 +1,5 @@
+DevGenius - Wi-Fi Attack Tool Result
+Target     : Loading...
+At attempt : 3
+Password   : WIFI@1WIFI@1WIFI@1
+ 

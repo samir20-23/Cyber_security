@@ -1,0 +1,84 @@
+<?xml version="1.0"?> Code\importwifi_prepared.xml
+<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1"> Code\importwifi_prepared.xml
+<name>attack_wifi</name> Code\importwifi_prepared.xml
+<SSIDConfig> Code\importwifi_prepared.xml
+<SSID> Code\importwifi_prepared.xml
+<name>attack_wifi</name> Code\importwifi_prepared.xml
+</SSID> Code\importwifi_prepared.xml
+</SSIDConfig> Code\importwifi_prepared.xml
+<connectionType>ESS</connectionType> Code\importwifi_prepared.xml
+<connectionMode>manual</connectionMode> Code\importwifi_prepared.xml
+<MSM> Code\importwifi_prepared.xml
+<security> Code\importwifi_prepared.xml
+<authEncryption> Code\importwifi_prepared.xml
+<authentication>WPA2PSK</authentication> Code\importwifi_prepared.xml
+<encryption>AES</encryption> Code\importwifi_prepared.xml
+<useOneX>false</useOneX> Code\importwifi_prepared.xml
+</authEncryption> Code\importwifi_prepared.xml
+<sharedKey> Code\importwifi_prepared.xml
+<keyType>passPhrase</keyType> Code\importwifi_prepared.xml
+<protected>false</protected> Code\importwifi_prepared.xml
+<keyMaterial>changethiskey</keyMaterial> Code\importwifi_prepared.xml
+</sharedKey> Code\importwifi_prepared.xml
+</security> Code\importwifi_prepared.xml
+</MSM> Code\importwifi_prepared.xml
+<MacRandomization xmlns="http://www.microsoft.com/networking/WLAN/profile/v3"> Code\importwifi_prepared.xml
+<enableRandomization>false</enableRandomization> Code\importwifi_prepared.xml
+</MacRandomization> Code\importwifi_prepared.xml
+</WLANProfile> Code\importwifi_prepared.xml
+<?xml version="1.0"?> Code\importwifi_prepared.xml
+<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1"> Code\importwifi_prepared.xml
+<name>attack_wifi</name> Code\importwifi_prepared.xml
+<SSIDConfig> Code\importwifi_prepared.xml
+<SSID> Code\importwifi_prepared.xml
+<name>attack_wifi</name> Code\importwifi_prepared.xml
+</SSID> Code\importwifi_prepared.xml
+</SSIDConfig> Code\importwifi_prepared.xml
+<connectionType>ESS</connectionType> Code\importwifi_prepared.xml
+<connectionMode>manual</connectionMode> Code\importwifi_prepared.xml
+<MSM> Code\importwifi_prepared.xml
+<security> Code\importwifi_prepared.xml
+<authEncryption> Code\importwifi_prepared.xml
+<authentication>WPA2PSK</authentication> Code\importwifi_prepared.xml
+<encryption>AES</encryption> Code\importwifi_prepared.xml
+<useOneX>false</useOneX> Code\importwifi_prepared.xml
+</authEncryption> Code\importwifi_prepared.xml
+<sharedKey> Code\importwifi_prepared.xml
+<keyType>passPhrase</keyType> Code\importwifi_prepared.xml
+<protected>false</protected> Code\importwifi_prepared.xml
+<keyMaterial>changethiskey</keyMaterial> Code\importwifi_prepared.xml
+</sharedKey> Code\importwifi_prepared.xml
+</security> Code\importwifi_prepared.xml
+</MSM> Code\importwifi_prepared.xml
+<MacRandomization xmlns="http://www.microsoft.com/networking/WLAN/profile/v3"> Code\importwifi_prepared.xml
+<enableRandomization>false</enableRandomization> Code\importwifi_prepared.xml
+</MacRandomization> Code\importwifi_prepared.xml
+</WLANProfile> Code\importwifi_prepared.xml
+<?xml version="1.0"?> Code\importwifi_prepared.xml
+<WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1"> Code\importwifi_prepared.xml
+<name>attack_wifi</name> Code\importwifi_prepared.xml
+<SSIDConfig> Code\importwifi_prepared.xml
+<SSID> Code\importwifi_prepared.xml
+<name>attack_wifi</name> Code\importwifi_prepared.xml
+</SSID> Code\importwifi_prepared.xml
+</SSIDConfig> Code\importwifi_prepared.xml
+<connectionType>ESS</connectionType> Code\importwifi_prepared.xml
+<connectionMode>manual</connectionMode> Code\importwifi_prepared.xml
+<MSM> Code\importwifi_prepared.xml
+<security> Code\importwifi_prepared.xml
+<authEncryption> Code\importwifi_prepared.xml
+<authentication>WPA2PSK</authentication> Code\importwifi_prepared.xml
+<encryption>AES</encryption> Code\importwifi_prepared.xml
+<useOneX>false</useOneX> Code\importwifi_prepared.xml
+</authEncryption> Code\importwifi_prepared.xml
+<sharedKey> Code\importwifi_prepared.xml
+<keyType>passPhrase</keyType> Code\importwifi_prepared.xml
+<protected>false</protected> Code\importwifi_prepared.xml
+<keyMaterial>changethiskey</keyMaterial> Code\importwifi_prepared.xml
+</sharedKey> Code\importwifi_prepared.xml
+</security> Code\importwifi_prepared.xml
+</MSM> Code\importwifi_prepared.xml
+<MacRandomization xmlns="http://www.microsoft.com/networking/WLAN/profile/v3"> Code\importwifi_prepared.xml
+<enableRandomization>false</enableRandomization> Code\importwifi_prepared.xml
+</MacRandomization> Code\importwifi_prepared.xml
+</WLANProfile> Code\importwifi_prepared.xml
